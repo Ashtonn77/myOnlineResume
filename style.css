@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin:0;
+    background: #000000;
+}
+
+.bio-container{
+    display: grid;
+    grid-template-columns: auto;    
+    grid-gap:10px;
+    margin: 0 10%;   
+}
+
+.bio{    
+    font-family: 'Gayathri', sans-serif;    ;
+    color: #F2F2F2;
+    text-align: center; 
+    letter-spacing: 5px;     
+}
+
+.name{
+    font-size: 50px;
+   
+}
+
+.title{
+    font-size: 22px;
+}
+
+
+/*below*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    grid-gap:15px;
+    margin: 5% 10%;       
+}
+
+.grid-item{
+    font-weight: 800;
+    color: black;
+    font-family: 'Major Mono Display', monospace;
+    letter-spacing: 1.5px;
+    line-height: 17px;
+    text-align: center;
+    background-color: #4281B3;
+    padding: 20px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 10px;   
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+  }
+
+  /*hover effects*/
+.front{
+    transition: all 0.5s ease;
+    transform: rotateY(360deg);    
+}
+
+.about:hover .front{
+    transform: rotateY(0deg);
+}
+.languages:hover .front{
+    transform: rotateY(0deg);
+}
+
+.social:hover .front{
+    transform: rotateY(0deg);
+}
+
+.courses:hover .front{
+    transform: rotateY(0deg);
+}
+
+.misc:hover .front{
+    transform: rotateY(0deg);
+}
+
+.education:hover .front{
+    transform: rotateY(0deg);
+}
+.projects:hover .front{
+    transform: rotateY(0deg);
+}
+
+.revision:hover .front{
+    transform: rotateY(0deg);
+}
+
+.other-tech:hover .front{
+    transform: rotateY(0deg);
+}
+
+.grid-item:hover{
+    color: white;
+    background: #D23030;
+    cursor: pointer;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: auto;    
+    grid-gap:10px;
+    margin: 0 10%;   
+}
+
+footer{    
+    font-family: 'Gayathri', sans-serif;    ;
+    color: #F2F2F2;
+    text-align: center; 
+    letter-spacing: 5px;   
+    font-size: 12px;  
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        font-size: 10px;
+    }
+  }
