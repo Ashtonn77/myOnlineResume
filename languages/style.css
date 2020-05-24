@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #272727;
+  overflow: hidden;
+}
+
+img {
+  max-width: 50px;
+}
+
+.back {
+  max-width: 30px;
+}
+.back:hover {
+  cursor: pointer;
+}
+
+.top-container {
+  text-align: right;
+  display: grid;
+  margin-top: 1%;
+  margin-right: 4%;
+}
+
+.grid-container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 1% auto;
+  column-gap: 4px;
+  row-gap: 4px;
+}
+
+.container {
+  transition: all 0.5s ease-in-out;
+}
+
+.cpp {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 5%;
+  text-align: center;
+  background: #3b7f58;
+  color: #75ffb0;
+}
+
+.js {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  padding: 5%;
+  text-align: center;
+  background-color: #126872;
+  color: #88f9d4;
+}
+
+.php {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 5%;
+  text-align: center;
+  background: #18c29c;
+  color: #46206d;
+}
+
+.python {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  padding: 5%;
+  text-align: center;
+  background: #d91a3d;
+  color: #161615;
+}
+
+.sql {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  padding: 5%;
+  text-align: center;
+  background: #ff6138;
+  color: #ffffec;
+}
+
+.cSharp {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 5%;
+  text-align: center;
+  background: #208cc9;
+  color: #ffffff;
+}
+
+.java {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  padding: 5%;
+  text-align: center;
+  background: #f23d3d;
+  color: #0d0d0d;
+}
+
+.inner {
+  text-align: left;
+  margin-top: 5%;
+  font-family: "Fahkwang", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 550;
+  outline: none;
+}
+
+.container:hover {
+  cursor: pointer;
+  background: #ff9f8f;
+  color: #332822;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+footer {
+  font-family: "Gayathri", sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    overflow: auto;
+  }
+  .cpp,
+  .js,
+  .python,
+  .php,
+  .sql,
+  .cSharp,
+  .java {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding: 2%;
+    font-size: 10px;
+  }
+  .quote {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer {
+    font-size: 9px;
+  }
+}
+
+/*MODAL START*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #516d73;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  height: 25%;
+  font-size: 18px;
+  font-family: "Fahkwang", sans-serif;
+  color: #f2f2f2;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*MODAL END*/
